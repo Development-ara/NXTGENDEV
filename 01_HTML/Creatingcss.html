@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Creating css file with class</title>
     <style>
-      body{
+      body {
         background-color: aqua;
       }
-      @media(max-width:600px)
-      {
-        body{
+      @media (max-width: 600px) {
+        body {
           background-color: blanchedalmond;
         }
       }
@@ -42,6 +41,24 @@
         width: 20%;
         margin: 5px 0;
       }
+      table{
+        width: 50%;
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 18px;
+        text-align: left;
+      }
+      th,td{
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+      }
+      th{
+        background-color: #f2f2f2;
+        color: black;
+      }
+      tr:hover{
+        background-color: #f5f5f5;
+      }
     </style>
   </head>
   <body>
@@ -70,5 +87,23 @@
       <input type="email" /><br /><br />
       <input type="submit" />
     </form>
+    <!--creating a table-->
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Contact No</th>
+      </tr>
+      <tr>
+        <td>Ashish</td>
+        <td>19</td>
+        <td>8698798767</td>
+      </tr>
+      <tr>
+        <td>Moon</td>
+        <td>18</td>
+        <td>8795687987</td>
+      </tr>
+    </table>
   </body>
 </html>
