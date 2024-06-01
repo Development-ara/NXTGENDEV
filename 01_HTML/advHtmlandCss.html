@@ -1,32 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advance Html and Css Concept</title>
     <style>
-        /*styling a div cotainer*/
-        .content{
-            border: 5px double rgb(87, 193, 165);
-            background-color: rgb(144, 88, 196);
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-        }
-       .content ol li{
+      /*styling a div cotainer*/
+      .content {
+        border: 5px double rgb(87, 193, 165);
+        background-color: rgb(144, 88, 196);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .content ol li {
         list-style-type: none;
-       }
+      }
+      /*styling a grid container*/
+      .container{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 20px;
+        padding-top: 20px;
+      }
+      nav{
+        grid-column: 1/2;
+        border: 2px solid rosybrown;
+      }
+      .contenttwo{
+        grid-column: 2/3;
+        border: 2px solid rgb(92, 67, 151);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!--creating adiv container-->
     <div class="content">
-        <p>This is a paragraph with some text about my webpage.</p>
-        <ol>
-            <li>Html</li>
-            <li>Css</li>
-            <li>JavaScript </li>
-        </ol>
+      <p>This is a paragraph with some text about my webpage.</p>
+      <ol>
+        <li>Html</li>
+        <li>Css</li>
+        <li>JavaScript</li>
+      </ol>
     </div>
-</body>
+    <!--creating a grid layout-->
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="contenttwo">
+        <p>This is a paragraph.</p>
+        <ol>
+          <li>Html</li>
+          <li>Css</li>
+          <li>Vanilla javascript</li>
+        </ol>
+      </div>
+    </div>
+  </body>
 </html>
