@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price Card</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+      }
+
+      .price-card {
+        width: 300px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        background-color: #fff;
+        text-align: center;
+      }
+
+      .price-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .price {
+        font-size: 20px;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      .features {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 20px 0;
+        color: #555;
+      }
+
+      .features li {
+        margin: 10px 0;
+      }
+
+      .signup-button {
+        background-color: #ff4b4b;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .signup-button:hover {
+        background-color: #ff1a1a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="price-card">
+      <h2 class="price-title">Basic Plan</h2>
+      <p class="price">$29.99/mo</p>
+      <ul class="features">
+        <li>For family who live together</li>
+        <li>Ad-free music listening</li>
+        <li>Download 10k songs/device</li>
+        <li>Login via 5 devices</li>
+      </ul>
+      <button class="signup-button">Sign Up</button>
+    </div>
+  </body>
+</html>
